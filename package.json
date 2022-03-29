@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "del": "rm -rf node_modules && lnpm i"
+    "del": "rm -rf node_modules && lnpm i",
+    "debug": "node ./bin/main.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "download-git-repo": "^3.0.2",
     "inquirer": "^8.2.0",
     "ora": "^6.0.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "fs-extra": "^9.0.1"
   }
 }

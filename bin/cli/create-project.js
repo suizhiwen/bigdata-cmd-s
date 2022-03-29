@@ -21,7 +21,6 @@ module.exports = function createProject (name) {
             res.map(e => {
                 promptList[0].choices.push(e.key) // 把git模板放入 promptList 中, 最后由inquirer执行
             })
-            console.log(res);
             inquirer.prompt(promptList).then(answers => {
                 const projectPath = path.resolve(name) // return absolute path
                 console.log(`Start to init a project in ${chalk.green(projectPath)}`)
